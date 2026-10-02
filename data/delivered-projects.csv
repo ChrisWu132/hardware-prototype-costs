@@ -1,0 +1,4 @@
+project,status,units_built,price_per_unit_usd,development_fee_usd,total_usd,certification,shipping_and_duties
+24-channel logic analyzer,delivered,15,20,800,1100,none,not included
+Lidar line-following car,delivered,10,150,5000,6500,none,not included
+Swing-arm tracked robot,delivered,4,5000,10000,30000,none,not included

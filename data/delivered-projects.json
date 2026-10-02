@@ -1,0 +1,20 @@
+{
+  "source": "Anvol's engineers in Shenzhen, figures from delivered projects",
+  "published": "2026-10-01",
+  "page": "https://block-less.com/hardware-prototype-cost",
+  "currency": "USD",
+  "total_formula": "development_fee + units_built * price_per_unit",
+  "projects": [
+    { "project": "24-channel logic analyzer", "status": "delivered", "units_built": 15, "price_per_unit": 20, "development_fee": 800, "total": 1100 },
+    { "project": "Lidar line-following car", "status": "delivered", "units_built": 10, "price_per_unit": 150, "development_fee": 5000, "total": 6500 },
+    { "project": "Swing-arm tracked robot", "status": "delivered", "units_built": 4, "price_per_unit": 5000, "development_fee": 10000, "total": 30000 }
+  ],
+  "not_included": ["FCC/CE certification (none of the three were certified)", "shipping and import duties (usually arranged by the customer)", "extras such as tutorials, training or live demos"],
+  "rules_of_thumb": {
+    "note": "Engineers' experience, not quotes. Use the project figures to compare.",
+    "development_fee_simple_small_device_usd": [500, 3000],
+    "development_fee_larger_robot_usd": [10000, 20000],
+    "small_batch_unit_cost_split": { "parts": 0.40, "pcb_and_board_assembly": 0.40, "enclosure": 0.15, "final_assembly_and_test": 0.05 },
+    "typical_batch_size_units": [5, 20]
+  }
+}
