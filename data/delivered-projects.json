@@ -1,19 +1,21 @@
 {
-  "source": "Anvol's engineers in Shenzhen, figures from delivered projects",
+  "source": "Anvol's engineers in Shenzhen: one delivered batch and two reference figures",
   "published": "2026-10-01",
-  "page": "https://block-less.com/hardware-prototype-cost",
+  "updated": "2026-10-18",
+  "page": "https://anvol.dev/costs/",
   "currency": "USD",
-  "total_formula": "development_fee + units_built * price_per_unit",
+  "total_formula": "development_fee + units * per_unit",
   "projects": [
-    { "project": "24-channel logic analyzer", "status": "delivered", "units_built": 15, "price_per_unit": 20, "development_fee": 800, "total": 1100 },
-    { "project": "Lidar line-following car", "status": "delivered", "units_built": 10, "price_per_unit": 150, "development_fee": 5000, "total": 6500 },
-    { "project": "Swing-arm tracked robot", "status": "delivered", "units_built": 4, "price_per_unit": 5000, "development_fee": 10000, "total": 30000 }
+    { "project": "24-channel logic analyzer", "status": "reference", "units": 50, "per_unit": 15, "per_unit_basis": "approximate parts cost", "development_fee": 500, "total": 1250, "total_approximate": true },
+    { "project": "Lidar line-following car", "status": "delivered", "units": 10, "per_unit": 150, "per_unit_basis": "price", "development_fee": 5000, "total": 6500, "total_approximate": false },
+    { "project": "Swing-arm tracked robot", "status": "reference", "units": 1, "per_unit": 6000, "per_unit_basis": "price", "development_fee": 30000, "total": 36000, "total_approximate": false }
   ],
-  "not_included": ["FCC/CE certification (none of the three were certified)", "shipping and import duties (usually arranged by the customer)", "extras such as tutorials, training or live demos"],
+  "not_included": ["FCC/CE certification (none of the three were certified)", "shipping and import duties (usually arranged by the customer)", "scope changes", "extras such as tutorials, training or live demos"],
   "rules_of_thumb": {
     "note": "Engineers' experience, not quotes. Use the project figures to compare.",
     "development_fee_simple_small_device_usd": [500, 3000],
-    "development_fee_larger_robot_usd": [10000, 20000],
+    "development_fee_small_robot_or_multi_board_usd": [3000, 10000],
+    "development_fee_larger_robot_usd": [10000, 30000],
     "small_batch_unit_cost_split": { "parts": 0.40, "pcb_and_board_assembly": 0.40, "enclosure": 0.15, "final_assembly_and_test": 0.05 },
     "typical_batch_size_units": [5, 20]
   }
